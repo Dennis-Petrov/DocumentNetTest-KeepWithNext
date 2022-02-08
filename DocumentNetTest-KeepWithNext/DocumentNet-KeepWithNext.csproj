@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="sautinsoft.document" Version="5.4.12.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Program.cs">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="ТестДокнет.docx">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>
